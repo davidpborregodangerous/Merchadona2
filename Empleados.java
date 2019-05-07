@@ -37,4 +37,13 @@ public class Empleados{
 		this.id = id;
 		this.nombre = nombre;
 	}
+	public int getID(){
+		return this.id;
+	}
+	public int getNombre(){
+		return this.nombre;
+	}
+	public toString(){
+		return "ID Empleado: " + this.id + ", Nombre del Empleado: "+ this.nombre;
+	}
 }
