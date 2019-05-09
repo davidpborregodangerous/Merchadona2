@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-import java.util.*;
 /**
 Se pide el hacer el programa que va controlar las cajas de la aplicación. Para abrir una caja se pondrá un empleado, y venderán productos.
 
@@ -21,11 +19,22 @@ Al finalizar la compra se actualiza el stock de cada producto y se saca por pant
 El programa principal dispondrá de una lista de productos, y un hashmap de empleados.
 
 Sugerencias: En el programa principal utilizar funciones, no pongáis todo el código en el main. También podéis crear una clase Merchadona, con todos los datos y la funcionalidad, y una clase Main, en la que tengas los menús para acceder al sistema.
- * @author David Portillo Borrego y Alberto Ferrero
+ * @author David Portillo Borrego, Alberto Ferrero y Luis Cristobal Colón
+ * @version 1.5
  *
 */
 public class Reponedores extends Empleados{
+	/**
+	 * Atributo de total del número de productos que han repuesto
+	 */
 	private int numTotalProductosResp;
+	
+	/**
+	 * Constructor con 3 parámetros. Crea objetos empleados con la ID, nombre y numTotalProductosResp.
+	 * @param id ID del Empleado
+	 * @param nombre Nombre del Empleado
+	 * @param numTotalProductosResp Número total de productos que han repuesto
+	 */
 	Reponedores(int id, String nombre, int numTotalProductosResp){
 		super(id, nombre);
 		this.numTotalProductosResp = numTotalProductosResp;
