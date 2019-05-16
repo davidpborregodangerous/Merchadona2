@@ -34,7 +34,7 @@ public class Productos{
 	private String nombre;
 	private double precioBase;
 	private int cantidadStock;
-	Empleados(String nombre, double precioBase, int cantidadStock){
+	Productos(String nombre, double precioBase, int cantidadStock){
 		this.nombre = nombre;
 		this.precioBase = precioBase;
 		this.cantidadStock = cantidadStock;
